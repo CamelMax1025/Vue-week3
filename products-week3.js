@@ -67,6 +67,10 @@ const app = createApp({
         this.modalDel.hide();
       });
     },
+    createImages() {
+      this.tempProduct.imagesUrl = [];
+      this.tempProduct.imagesUrl.push("");
+    },
   },
   mounted() {
     const token = document.cookie.replace(
