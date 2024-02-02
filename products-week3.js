@@ -17,7 +17,7 @@ const app = createApp({
   },
   methods: {
     getProducts() {
-      const api = `${site}/api/${api_path}/admin/products`; //product 因應第四周加入 【分頁需求】。
+      const api = `${site}/api/${api_path}/admin/products/all`; //product 因應第四周加入 【分頁需求】。
       axios.get(api).then((res) => {
         this.products = res.data.products;
       });
